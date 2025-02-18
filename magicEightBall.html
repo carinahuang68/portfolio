@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magic 8 Ball</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body style="background-color:#303030">
+    <div id="container3">
+      <p style= "-webkit-text-stroke: 1px #d7a7fc;font-family: comic sans ms"><strong><font color="black" size="6" >&#x1f52e;Magic 8 Ball&#x1f52e;</font></strong></p>
+      <p><i><font size="4">“Step into the realm of uncertainty and let the mystical powers of the <br>Magic 8 Ball unveil the answers you seek with a simple click!”</font></i></p>
+      Ask a question:<input type="text">
+      <button id="btn">Enter</button>
+      <p id="answer"></p>
+    </div>
+  <script>
+    let button2 = document.getElementById('btn');
+    let output2 = document.getElementById('answer');
+
+    function generateAnswer(){
+      let randomNumber = Math.floor(Math.random()*8);
+      switch(randomNumber){
+        case 0:
+          return '<font color=\"#b4fca7\">It is certain</font>';
+          break;
+        case 1:
+          return '<font color=\"#b4fca7\">It is decidely so</font>';
+          break; 
+        case 2:
+          return '<font color=\"#faf9a7\">Reply hazy try again</font>';
+          break;
+        case 3: 
+          return '<font color=\"#faf9a7\">Cannot predict now</font>';
+          break;
+        case 4:
+          return '<font color=\"#ffcfcf\">Do not count on it</font>';
+          break;
+        case 5:
+          return '<font color=\"#ffcfcf\">My sources say no</font>';
+          break;
+        case 6:
+          return '<font color=\"#ffcfcf\">Outlook not so good</font>';
+          break;
+        case 7:
+          return '<font color=\"#b4fca7\">Signs point to yes</font>';
+          break;
+      }
+    }
+
+    button2.addEventListener('click', function(){
+      output2.innerHTML = generateAnswer();
+    });
+  </script>
+  </body>
+</html>
