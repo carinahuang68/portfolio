@@ -64,3 +64,8 @@ h2 {
 
 /********************************/
 
+@media (max-width: 576px) {
+    #introduction {
+        display: none;
+    }
+}
