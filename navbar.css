@@ -1,0 +1,26 @@
+
+#mainNavbar {
+    background-color: #CEA1A1;
+    /* background-color: #7497a3; */
+    display: flex;
+    align-items: center; 
+    height: 70px; 
+}
+
+.nav-link {
+    font-size: x-large;
+    color: white;
+    font-family: 'Zain', sans-serif;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #312B36;
+}
+
+.navbar-brand #my-name{
+    color:#312B36;
+    font-family: 'Zain', sans-serif;
+    font-weight: 600;
+}

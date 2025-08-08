@@ -1,0 +1,92 @@
+body {
+    background: #F6EFef;
+    /* background-color: #c7eaf0; */
+    color: #312B36;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+#mainNavbar {
+    background-color: #CEA1A1;
+    /* background-color: #7497a3; */
+    display: flex;
+    align-items: center; 
+    height: 70px; 
+}
+
+.nav-link {
+    font-size: x-large;
+    color: white;
+    font-family: 'Zain', sans-serif;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #312B36;
+}
+
+.navbar-brand #my-name{
+    color:#312B36;
+    font-family: 'Zain', sans-serif;
+    font-weight: 600;
+}
+
+.img-full {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Crops the image to fill the container */
+}
+
+.col-6.my-photo {
+    padding: 0; /* Removes padding to ensure the image fills the space */
+}
+
+#hello-world {
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+#intro-content p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#intro {
+    margin-top: 70px;
+}
+
+#intro-content h2 {
+    font-family: "Zain", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+#intro-content p:first-of-type {
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: x-large;
+    color: #934f4f;
+    /* color: #3b5256; */
+
+}
+
+#intro-content p:nth-of-type(2) {
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-size: large;
+}
+
+
+
+/********************************/
+

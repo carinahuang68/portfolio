@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Coding Journal</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-6 my-photo">
+                <img src="imgs/carina-photo.JPG" alt="" class="img-full">
+            </div>
+            <div id='intro' class="col-6 d-flex align-items-center justify-content-center px-5">
+                <div id="intro-content" class="text-center d-md-block">
+                    <h1 id ='hello-world'>Hello World!</h1>
+                    <h2>I'm Carina</h2>
+                    <div class="py-4">
+                        <p>A caring individual, aspiring web developer, and passionate problem solver. </p>
+                        <p>I’m currently a second-year CS student at UBC, learning the ins and outs of web development. My goal is to become a full-stack developer who can build impactful, user-friendly websites and applications.</p>
+                    </div>
+                    <div class="social-icons pt-3">
+                        <a href="https://github.com/carinahuang68" target="_blank" class="mx-2">
+                            <i class="fab fa-github" style="color: #312B36; font-size: 24px;"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/carina-huang-b489a6237" target="_blank" class="mx-2">
+                            <i class="fab fa-linkedin" style="color: #312B36; font-size: 24px;"></i>
+                        </a>
+                        <a href="mailto:carinahuang673@gmail.com" target="_blank" class="mx-2">
+                            <i class="fas fa-envelope" style="color: #312B36; font-size: 24px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
