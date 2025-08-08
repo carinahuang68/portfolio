@@ -1,3 +1,4 @@
+
 $(function () {
     $(document).scroll(function () {
         var $nav = $("#mainNavbar");
@@ -6,7 +7,7 @@ $(function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("navbar.html")
+    fetch("/navbar.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("navbar-placeholder").innerHTML = data;

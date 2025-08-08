@@ -2,7 +2,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     font-family:Comic Sans MS, Comic Sans, cursive;
 }
 
@@ -17,12 +17,12 @@ body {
     border: 3px solid black;
 }
 
-ul {
+#todo ul {
     display: inline-block;
     text-align: left;
 }
 
-li:hover {
+#todo li:hover {
     text-decoration: line-through;
 }
 
@@ -31,14 +31,10 @@ button {
     background-color: blanchedalmond;
     border-radius: 0.5em;
     width: 80px;
-    height: 25px;
     transition: all 0.25s ease-out;
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
-input {
-    height: 20px;
-}
 
 form {
     margin-top: 20px;

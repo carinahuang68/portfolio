@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Magic 8 Ball</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- header -->
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Kalam:wght@300;400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="/projects/projects.css" rel="stylesheet">
+    <link rel="stylesheet" href="/navbar.css">
+    <!-- header -->
+</head>
+<style>
+    #zain-text {
+        font-family: "Zain", sans-serif;
+        font-weight: 300;
+        font-size: x-large;
+    }
+
+    #answer {
+        font-family: "Kalam", cursive;
+    }
+</style>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div id="container3" class="mt-5 p-5">
+        <p style="-webkit-text-stroke: 1px #d7a7fc;font-family: comic sans ms"><strong>
+                <font color="black" size="6">&#x1f52e;Magic 8 Ball&#x1f52e;</font>
+            </strong></p>
+        <p><i>
+                <font size="4">“Step into the realm of uncertainty and let the mystical powers of the <br>Magic 8 Ball
+                    unveil the answers you seek with a simple click!”</font>
+            </i></p>
+        <div id="zain-text">
+            <form action="" id="questionForm">
+                <label for="question">Ask a question: </label>
+                <input type="text" name="question">
+                <button id="btn" class="mt-4">Enter</button>
+            </form>
+            <p id="answer" class="mt-4"></p>
+        </div>
+    </div>
+    <script>
+        let button2 = document.getElementById('questionForm');
+        let output2 = document.getElementById('answer');
+
+        function generateAnswer() {
+            let randomNumber = Math.floor(Math.random() * 8);
+            switch (randomNumber) {
+                case 0:
+                    return '<font color=\"#b4fca7\">It is certain</font>';
+                    break;
+                case 1:
+                    return '<font color=\"#b4fca7\">It is decidely so</font>';
+                    break;
+                case 2:
+                    return '<font color=\"#faf9a7\">Reply hazy try again</font>';
+                    break;
+                case 3:
+                    return '<font color=\"#faf9a7\">Cannot predict now</font>';
+                    break;
+                case 4:
+                    return '<font color=\"#ffcfcf\">Do not count on it</font>';
+                    break;
+                case 5:
+                    return '<font color=\"#ffcfcf\">My sources say no</font>';
+                    break;
+                case 6:
+                    return '<font color=\"#ffcfcf\">Outlook not so good</font>';
+                    break;
+                case 7:
+                    return '<font color=\"#b4fca7\">Signs point to yes</font>';
+                    break;
+            }
+        }
+
+        button2.addEventListener('submit', function (event) {
+            event.preventDefault();
+            output2.innerHTML = generateAnswer();
+        });
+    </script>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="/script.js"></script>
+    <!------------>
+</body>
+
+</html>
