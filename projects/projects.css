@@ -1,8 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: #F6EFef;
     /* background-color: #c7eaf0; */
     color: #312B36;
-    padding: 25px;
+    /* padding: 25px; */
     font-family: sans-serif;
 }
 
@@ -29,7 +32,7 @@ body {
 }
 
 .card-title {
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
     font-size: 2rem;
     color:#3b5256;
@@ -41,7 +44,13 @@ body {
     text-align: center;
 }
 
-
+#message {
+    text-align: center;
+    font-family: 'Zain', sans-serif;
+    font-size: 1.5rem;
+    /* color: #ba7171; */
+    color: #cea1a1;
+}
 
 .link-button {
     font-size: 1.5rem;
@@ -76,10 +85,10 @@ body {
 
 
 h2 {
-    font-family: "Kalam";
+    font-family: "Zain";
     text-align: center;
-    color: #361a1a;
-    font-size: 2.5rem;
+    color: #633333;
+    font-size: 8vh;
     font-weight: 600;
 }
 
@@ -156,6 +165,9 @@ thead {
     color: rgb(73, 73, 73);
 }
 
-#projects {
-    width: 20%;
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 6vh;
+    }
 }
