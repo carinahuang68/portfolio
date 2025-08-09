@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>My Coding Journal</title>
+    <title>My Projects</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- Google font -->
@@ -14,6 +14,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="./projects.css" rel="stylesheet">
     <link rel="stylesheet" href="/navbar.css">
@@ -22,41 +23,125 @@
 <body>
 
     <div id="navbar-placeholder"></div>
+    <!-- My Learning -->
+        <!-- Codecademy -->
+            <!-- journals/day1.html -->
+            <!-- journals/day3-7.html -->
+        <!-- Web Developer Bootcamp 2025  -->
+            <!-- https://www.udemy.com/course/the-web-developer-bootcamp -->
 
-    <section id="content" class="mt-5">
-        <div class="box" id="catalog">
-            <h2>Certificates</h2>
-            <ul>
-                <li>Codecademy
-                    <ul>
-                        <li><a href="journals/day1.html">Day 1~2</a></li>
-                        <li><a href="journals/day3-7.html">Day 3~7</a></li>
-                    </ul>
-                </li>
-                <br>
-                <li>Udemy: <br>
-                    <a class="project-link"
-                        href="https://www.udemy.com/course/the-web-developer-bootcamp/?couponCode=KEEPLEARNING">
-                        The Web Developer Bootcamp 2025 (Colt Steele)
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <!-- Projects -->
+        <!-- https://github.com/carinahuang68/clue-application -->
+        <!-- https://github.com/carinahuang68/dsci-project -->
 
-        <div class="box" id="mini-projects">
-            <h2>Mini Projects</h2>
-            <a class="project-link" href="numberGuessing/numberGuessing.html">Number guessing game</a>
-            <a class="project-link" href="calendar/calendar.html">Schedule Finder</a>
-            <a class="project-link" href="magicEightBall.html">Magic 8 Ball</a>
-            <a class="project-link" href="List/toDoList.html">List App</a>
-            <a class="project-link" href="ScoreKeeper/scoreKeeper.html">Score Keeper</a>
+    <!-- Mini Games and Applications -->
+        <!-- numberGuessing/numberGuessing.html -->
+        <!-- calendar/calendar.html -->
+        <!-- magicEightBall.html -->
+        <!-- List/toDoList.html -->
+        <!-- ScoreKeeper/scoreKeeper.html -->
+    
+    <div class="pt-5"></div>
+
+    <h2 class="py-4 heading slide-up">Projects</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-around">
+                <div class="card shadow slide-up" style="width: 25rem; animation-delay: 0.3s;">
+                    <img src="/imgs/clue.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                      <h5 class="card-title ">Clue Tracker</h5>
+                      <p class="card-text">A GUI app for Clue players to keep track of their notes automatically by entering gameplay information.</p>
+                        <a href="https://github.com/carinahuang68/clue-application" class="btn link-button">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card shadow slide-up" style="width: 25rem; animation-delay: 0.6s;">
+                    <img src="/imgs/alarmed.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                      <h5 class="card-title">cmd-f: AlarMed</h5>
+                      <p class="card-text">A medication alarm system made with Java, Arduino, and Figma from Western Canada's largest hackathon for underespesented genders in tech</p>
+                      <a href="https://devpost.com/software/alarmed-cvyujg?_gl=1*11jkh5x*_gcl_au*MTEzNTQxMDM2OS4xNzUzNTY4MzQ4*_ga*MzA5MzA5OTkxLjE3NTM1NjgzNDg.*_ga_0YHJK3Y10M*czE3NTQ3MTExNjckbzIkZzEkdDE3NTQ3MTEyODAkajE0JGwwJGgw" class="btn link-button">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <div class="mt-4"></div>
+    <h2 class="py-4 heading slide-up" style="animation-delay: 0.9s;">Mini games and applications</h2>
+    <div class="d-flex flex-column" id="mini-games">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem; height: 18rem">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body d-flex flex-column justify-content-center">
+                          <h5 class="card-title">Guess the Number</h5>
+                          <p class="card-text" style="font-style: normal;">My first mini game built with JavaScript</p>
+                          <a href="numberGuessing/numberGuessing.html" class="btn link-button">Enter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem; height: 18rem">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body d-flex flex-column justify-content-center">
+                          <h5 class="card-title">What's Today?</h5>
+                          <p class="card-text">A quick school's rotation day and event checker</p>
+                          <a href="calendar/calendar.html" class="btn link-button">Enter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem; height: 18rem">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body d-flex flex-column justify-content-center">
+                          <h5 class="card-title">Magic Eight Ball</h5>
+                          <p class="card-text italic">A fortune telling ball with all the answers</p>
+                          <a href="magicEightBall.html" class="btn link-button">Enter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="box" id="projects">
-            <h2>GitHub Projects</h2>
-            <a class="project-link" href="https://github.com/carinahuang68/clue-application">Clue Application</a>
-            <a class="project-link" href="https://github.com/carinahuang68/dsci-project">Data Science Project</a>
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem; height: 18rem">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body d-flex flex-column justify-content-center">
+                          <h5 class="card-title">Build a List</h5>
+                          <p class="card-text italic">A customizable list maker for anything you need</p>
+                          <a href="List/toDoList.html" class="btn link-button">Enter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem; height: 18rem">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body d-flex flex-column justify-content-center">
+                          <h5 class="card-title">Score Keeper</h5>
+                          <p class="card-text">Made with Bulma during the Web Dev Bootcamp</p>
+                          <a href="ScoreKeeper/scoreKeeper.html" class="btn link-button">Enter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem; height: 18rem">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body d-flex flex-column justify-content-center">
+                          <h5 class="card-title">Just a Card</h5>
+                          <p class="card-text">Stay tuned for more mini games and apps &#128513</p>
+                          <!-- <a href="" class="btn link-button">Enter</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

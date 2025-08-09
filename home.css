@@ -27,6 +27,10 @@ h2 {
     display: inline-block;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 #hello-world {
     font-family: "Roboto Mono", monospace;
     /* font-family: 'Courier New', Courier, monospace; */

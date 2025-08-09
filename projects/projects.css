@@ -6,10 +6,6 @@ body {
     font-family: sans-serif;
 }
 
-#content {
-    display: flex;
-    justify-content: center;
-}
 
 .box {
     background-color: white;
@@ -23,36 +19,68 @@ body {
     line-height: 1.5;
 }
 
-a {
-    display: block;
-    text-decoration: none;
-    transition: all 0.25s ease-out;
-}
-
-a:hover{
-    color:rgb(1, 42, 73);
-}
-
-.project-link:hover {
-    background-color: rgb(182, 220, 253);
-    border-radius: 0.5em;
-}
-
-li {
-    width: fit-content;
-}
-
-#mini-projects, #projects {
+.card {
+    font-family: 'Zain', sans-serif;
+    font-size: 1.5rem;
     text-align: center;
-    line-height: 2.0;
-    background-color: white;
-    width: 300px;
-    margin: 10px;
-    padding: 20px;
+    padding: 2.5%;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
 }
+
+.card-title {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color:#3b5256;
+    /* color: #57767b; */
+}
+
+.card-text {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+.link-button {
+    font-size: 1.5rem;
+    background-color: #62c4cc;
+    color: white;
+    /* border: transparent solid 3px; */
+}
+
+.link-button:hover {
+    background-color: #934f4f;
+    color: white;
+    /* border: #633333 solid 3px; */
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(15%);
+    animation: slideUp 0.4s ease-out forwards;
+}
+
+/* Keyframes for slide-up */
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* #mini-games .card {
+    margin-bottom: 4rem;
+} */
+
 
 h2 {
+    font-family: "Kalam";
     text-align: center;
+    color: #361a1a;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 #heading {
